@@ -1,0 +1,83 @@
+.mediaViewInfo {
+	--web-view-name: Home;
+	--web-view-id: Home;
+	--web-enable-scale-up: true;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Home;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+#Home {
+	position: absolute;
+	box-sizing: border-box;
+	background: #E5E5E5;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	--web-view-name: Home;
+	--web-view-id: Home;
+	--web-enable-scale-up: true;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#Rectangle_1 {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+.Rectangle_1 {
+	position: fixed;
+	overflow: visible;
+	width: 100vw;
+	height: 20vh;
+	left: 0px;
+	top: 0px;
+}
+#Dapapepe {
+	position: absolute;
+	left: 1vw;
+	top: 2vh;
+	overflow: visible;
+	width: 80vw;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'Fugaz One', cursive;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12vh;
+	color: rgba(255,255,255,1);
+}
+#time {
+	position: absolute;
+	left: 1vw;
+	top: 30vh;
+	overflow: visible;
+	width: 0px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'Fugaz One', cursive;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 6vh;
+	color: rgba(112,112,112,1);
+}
+#camera {
+	position: absolute;
+	left: 1vw;
+	top: 40vh;
+	overflow: visible;
+	width: 0px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'Fugaz One', cursive;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 6vh;
+	color: rgba(112,112,112,1);
+}

@@ -1,0 +1,76 @@
+.mediaViewInfo {
+    --web-view-name: time;
+    --web-view-id: time;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: time;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#time {
+    position: absolute;
+    box-sizing: border-box;
+    background: #E5E5E5;
+	width: 100vw;
+	height: 100vh;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    --web-view-name: time;
+    --web-view-id: time;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#Rectangle_3 {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+.Rectangle_3 {
+    position: absolute;
+    overflow: visible;
+	width: 100vw;
+	height: 20vh;
+    left: 0px;
+    top: 0px;
+}
+#Dapapepe {
+	position: absolute;
+	left: 1vw;
+	top: 2vh;
+	overflow: visible;
+	width: 80vw;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'Fugaz One', cursive;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12vh;
+	color: rgba(255,255,255,1);
+}
+.Polygon_1 {
+    overflow: visible;
+    position: absolute;
+    top: 80vh;
+    left: 50px;
+    width: 69px;
+    height: 80px;
+    transform: rotate(-90deg);
+}
+#test {
+    position: absolute;
+	left: 1vw;
+	top: 30vh;
+    overflow: visible;
+    width: 56px;
+    white-space: nowrap;
+    text-align: center;
+	font-family: 'Fugaz One', cursive;
+    font-style: normal;
+    font-weight: normal;
+	font-size: 3vh;
+    color: rgba(0,0,0,1);
+}
