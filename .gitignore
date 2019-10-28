@@ -28,3 +28,5 @@ hs_err_pid*
 # Netbean
 / test/nbproject/private/
 / test/build/
+/Java/Uang/nbproject/private/
+/Java/Uang/build/
