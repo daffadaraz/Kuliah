@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>Latihan 3 FORM</TITLE>
+    </HEAD>
+    <BODY>
+            <FORM ACTION="Latihan 3 - Info.htm" METHOD="GET">
+            <p>Nama</p>
+            <INPUT TYPE = "TEXT" NAME="nama" SIZE="20" MAXLENGTH = "20">
+            <BR>
+            <p>NPM</p>
+            <INPUT TYPE = "TEXT" NAME="npm" SIZE="8" MAXLENGTH = "8">
+            <p>Password</p>
+            <INPUT TYPE = "password" NAME="pass" SIZE="8" MAXLENGTH = "25" minlength="8">
+            <BR><BR>
+            Matkul yang anda ambil : 
+            <BR>
+                <INPUT TYPE = "checkbox"
+                NAME = "PBW" CHECKED> PBW <BR>
+                <INPUT TYPE = "checkbox"
+                NAME = "GKPC"> GKPC<BR>
+                <INPUT TYPE = "checkbox"
+                NAME = "BINDO"> Bahasa Indonesia<BR>
+            <BR>
+            Jurusan anda :<BR>
+                <SELECT NAME = "Jurusan">
+                <OPTION VALUE = "SI">Sistem Informasi</OPTION>
+                <OPTION VALUE = "IT">Teknik informatika</OPTION>
+                <OPTION VALUE = "SK">Sistem Komputer</OPTION>
+                </Select>
+            <BR><BR>
+                Agama : <BR>
+                    <INPUT TYPE = "Radio"
+                    NAME = "agama" VALUE "I">Islam<BR>
+                    <INPUT TYPE = "Radio"
+                    NAME = "agama" VALUE "K">Kristen<BR>
+                    <INPUT TYPE = "Radio"
+                    NAME = "agama" VALUE "I" checked>Indomie<BR>
+            <BR>
+                Remarks : <BR>
+                    <TEXTAREA NAME ="komentar"
+                    ROWS ="5" COLS="40"
+                    WRAP>...
+                    </TEXTAREA>
+            <BR><BR>
+            <INPUT TYPE = "SUBMIT" VALUE="KIRIM">
+            <INPUT TYPE = "RESET" VALUE="KOSONGKAN">
+        </FORM>
+    </BODY>
+</HTML>
