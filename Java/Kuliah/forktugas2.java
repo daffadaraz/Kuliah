@@ -74,9 +74,9 @@ public class forktugas2 {
                   }
 
                   sum = sum - Integer.parseInt(uangmsk.getText());
-                  double p = 0.25 * Integer.parseInt(uangmsk.getText());
+                  double batas = 0.25 * Integer.parseInt(uangmsk.getText());
                   String a;
-                  if(sum < p){
+                  if(sum < batas){
                       a = "HEMAT";
                   }else{
                       a = "BOROS";
@@ -85,7 +85,7 @@ public class forktugas2 {
                   JOptionPane.showMessageDialog(null, 
                           "Biodata Anda \n" + "Nama    : " + nama.getText() + "\n" + "NPM      : " + npm.getText() + "\n" + "Kelas    : " + kelas.getText(), 
                           "BIODATA", JOptionPane.INFORMATION_MESSAGE);
-                  JOptionPane.showMessageDialog(null, "Jumlah Pengeluaran Anda : " + sum + "\n" + "Batas : " + p + "\n" + a, "Pengeluaran", JOptionPane.INFORMATION_MESSAGE);                 
+                  JOptionPane.showMessageDialog(null, "Jumlah Pengeluaran Anda : " + sum + "\n" + "Batas : " + batas + "\n" + a, "Pengeluaran", JOptionPane.INFORMATION_MESSAGE);                 
 //                  Loop
                   int option = JOptionPane.showConfirmDialog(null, "Apakah Anda Ingin Kembali Ke Awal?", "Kembali", JOptionPane.OK_CANCEL_OPTION);
                   if(option == JOptionPane.OK_OPTION){
