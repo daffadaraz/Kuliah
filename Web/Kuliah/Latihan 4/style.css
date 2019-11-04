@@ -1,0 +1,43 @@
+#banner {
+	position: absolute;
+    top: 25vh;
+    left: 10%;
+	overflow: visible;
+	width: 80vw;
+	text-align: center;
+	font-family: 'Helvetica', sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 12vh;
+	color: green;
+}
+
+#npm {
+    color: purple;
+}
+
+#nama {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+#text{
+    text-align: center;
+}
+
+
+#table , th, td{
+    border: 1px groove black;
+}
+
+#namatable{
+    background-color: aqua;
+}
+
+#search{
+    text-align:left;
+}
+
+#body{
+    background-color: lightblue;
+}
