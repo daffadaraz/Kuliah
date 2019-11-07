@@ -2,7 +2,7 @@ import javax.lang.model.type.ArrayType;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-public class forktugas2 {
+public class prGui {
     public static boolean InputanTidakKosong(Object[] obj){
         for (Object arrayItem : obj){
             if(arrayItem instanceof JTextField){
@@ -44,19 +44,19 @@ public class forktugas2 {
 //              Input Uang ke dalam Object[]
               Object[] uang = {
                   "Uang Masuk ", uangmsk,
-                  "Senin",
+                  "--Senin--",
                   "Uang Jajan ", uangjjn1,
                   "Uang Transport ", uangtrn1,
-                  "Selasa",
+                  "--Selasa--",
                   "Uang Jajan", uangjjn2,
                   "Uang Transport", uangtrn2,
-                  "Rabu",
+                  "--Rabu--",
                   "Uang Jajan", uangjjn3,
                   "Uang Transport", uangtrn3,
-                  "Kamis",
+                  "--Kamis--",
                   "Uang Jajan", uangjjn4,
                   "Uang Transport", uangtrn4,
-                  "Jum'at",
+                  "--Jum'at--",
                   "Uang Jajan", uangjjn5,
                   "Uang Transport", uangtrn5,
               };

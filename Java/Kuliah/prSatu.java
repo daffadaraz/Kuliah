@@ -1,4 +1,4 @@
-public class uangKonstruktor{
+public class prSatu{
 
     public static int pengeluaran(uang[] seminggu) {
         int sum = 0;
