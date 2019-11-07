@@ -30,3 +30,8 @@ hs_err_pid*
 / test/build/
 /Java/Uang/nbproject/private/
 /Java/Uang/build/
+
+# Intellij
+
+# Default ignored files
+/workspace.xml
