@@ -1,9 +1,11 @@
+package UangKonstruktor;
+
 import java.util.Scanner;
 
-class biodata{
+class biodatas{
     String nama,npm,kelas;
 
-    public biodata(String nama,String npm,String kelas){
+    public biodatas(String nama,String npm,String kelas){
         this.nama = nama;
         this.npm = npm;
         this.kelas = kelas;
@@ -39,7 +41,7 @@ public class uangKonstruktor{
             return "BOROS";
     }
 
-    public static biodata InputBiodata(){
+    public static biodatas InputBiodata(){
         String nama,npm,kelas;
         System.out.print("Nama  : ");
         nama = br.nextLine();
@@ -47,7 +49,7 @@ public class uangKonstruktor{
         npm = br.nextLine();
         System.out.print("Kelas : ");
         kelas = br.nextLine();
-        biodata bios = new biodata(nama,npm,kelas);
+        biodatas bios = new biodatas(nama,npm,kelas);
         return bios;
     }
 

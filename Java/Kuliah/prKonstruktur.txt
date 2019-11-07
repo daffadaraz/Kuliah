@@ -1,8 +1,0 @@
--uang_jajan()
--uang_transport()
--pengeluaran()
--saldo()
-
-metode, konstruktor, obj
-
-pr get set

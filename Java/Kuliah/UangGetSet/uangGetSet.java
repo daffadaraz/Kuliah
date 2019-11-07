@@ -1,3 +1,5 @@
+package UangGetSet;
+
 import java.util.Scanner;
 
 class biodata{
