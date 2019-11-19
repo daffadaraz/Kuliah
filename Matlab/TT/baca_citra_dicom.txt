@@ -1,0 +1,3 @@
+b=dicomread('crop_1S0LMLOanon220820114.dcm');
+Max=double(max(max(b)));
+I=uint8(double(b(:,:))*255/Max);   % konversi nilai citra dicom 16 bit ke 8 bit
