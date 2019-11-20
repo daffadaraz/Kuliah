@@ -1,4 +1,4 @@
-file = 'mdb011fatt.jpg';
+file = input('NamaFile: ','s');
 
 % membaca citra
 asli = imread(file);

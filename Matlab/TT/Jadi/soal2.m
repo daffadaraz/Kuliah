@@ -1,29 +1,18 @@
-b=dicomread('crop_14S0RMLOanon2502.dcm');
-thresho = 0.65;
-jumlah = 3;
+filename = input('NamaFile: ','s');
+thresho = input('Threshold (0.65) [0-1] : ');
+jumlah = input('Sensitivity (1..3) : ');
+
+b=dicomread(filename);
 
 Max=double(max(max(b)));
 asli=uint8(double(b(:,:))*255/Max);   % konversi nilai citra dicom 16 bit ke 8 bit
 
-[rowa, cola, ~] = size(asli);
-img = asli;
-%img = imcrop(asli,[0 2 rowa cola]);
-L = imbinarize(img,0.1);
-
-
-%[imgc,props] = filtering(L);
-%imgc = imcrop(asli, props.BoundingBox);
-imgc = img;
-
-Canc = imbinarize(imgc,thresho);
+Canc = imbinarize(asli,thresho);
 
 [thresh,propt,statt] = filtering(Canc,jumlah);
-%thresh = bwareafilt(thresh,1);
 
-%imgc = imcrop(asli, props.BoundingBox);
-CancAsli = imgc;
+CancAsli = asli;
 threshp = imcrop(CancAsli, propt.BoundingBox);
-%threshp = imcrop(CancAsli, propt.BoundingBox);
 
 [y1,x1] = find(thresh); %// Find row and column locations that are non-zero
 
@@ -39,12 +28,11 @@ ymax1 = max(y1(:));
 width1 = xmax1 - xmin1 + 1;
 height1 = ymax1 - ymin1 + 1;
 
-out1 = imcrop(img, [xmin1 ymin1 width1 height1]);
+out1 = imcrop(asli, [xmin1 ymin1 width1 height1]);
 
-
-subplot(2,2,1), imshow(img), title('Asli');
-subplot(2,2,2), imshow(immultiply(imgc,thresh)), title('Cancer');
-subplot(2,2,3), imshow(imgc), 
+subplot(2,2,1), imshow(asli), title('Asli');
+subplot(2,2,2), imshow(immultiply(asli,thresh)), title('Cancer');
+subplot(2,2,3), imshow(asli), 
 
 [labeled, numObjects] = bwlabel(thresh,8);
 stats = regionprops(labeled,'BoundingBox');
