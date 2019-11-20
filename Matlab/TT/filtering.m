@@ -1,4 +1,4 @@
-function [imgc,props]=filtering(img)
+function [imgc,props,stats]=filtering(img,many)
 
 [rows, columns, ~] = size(img);
 
@@ -11,9 +11,8 @@ N = bwareaopen(M,100);
 stats = regionprops(labeled,'BoundingBox');
 
 %Filter ukuran terbesar
-T = M;
-%T = bwareafilt(M,1);
-%T = imfill(T, 'holes');
+T = bwareafilt(M,many);
+T = imfill(T, 'holes');
 props = regionprops(T, 'BoundingBox');
 
 %Blur
