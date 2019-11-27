@@ -1,0 +1,81 @@
+<head>
+    <title> Midterm </title>
+    <style rel="stylesheet" type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            }
+    </style>
+</head>
+
+<body>
+    <script lang=javascript>
+        function newline(){
+            document.write("<BR>");
+        }
+
+        function yes(){
+            newline();newline();
+            var stri = "Mari Bermain Data & Angka";
+            document.write(stri.fontcolor("blue"));
+            newline();
+            document.write("Ini contoh variabel = A, IniContoh, Contoh_Lain");
+            newline();
+            document.write("4 * 2  = "+ (4*2)); newline();
+            document.write("3 / 2  = "+ (3/2)); newline();
+            document.write("7 + 11 = "+ (7+11)); newline();
+            document.write("7 - 11 = "+ (7-11)); newline();
+            newline();
+            document.write("Sudah berhasil dengan latihan JavaScript-mu ?");
+            newline();
+            //var nilai = prompt("Masukkan nilaimu : ");
+        }
+
+        document.writeln("Mengoding dengan JavaScript <BR>");
+        var d = new Date();
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var day = d.getDay();
+        var date = d.getDate();
+        var month = d.getMonth() + 1;
+        var year = d.getFullYear();
+        var dateFull = date+"/"+months[month]+"/"+year;
+        document.writeln(days[day] + ", " + dateFull);
+
+        var pil = confirm("Are you ready?");
+        if(pil == true){
+
+            yes();
+        }
+        else{
+            alert("NO");
+        }
+    </script>
+    <form name="formNilai"
+    method="dialog">
+    <BR>
+        Masukkan nilaimu : <INPUT type="text" name="nilai" onchange="cekNilai(this)">
+    <BR>
+    </form>
+
+    <script lang="javascript">
+    
+    function cekNilai(element){
+            var nilai = element.value;
+            if(nilai >= 60){
+                //document.formNilai.hasil.value = "Kamu sudah Berhasil!";
+                //document.write("Kamu sudah Berhasil!");
+                document.getElementById('result').innerHTML = "Kamu sudah Berhasil!";
+            }
+            else{
+                //document.formNilai.hasil.value = "Kamu belum Berhasil!";
+                document.getElementById('result').innerHTML = "Kamu belum Berhasil!";
+            }
+        };
+
+    </script>
+    
+    <div id="result">
+
+    </div>
+</body>
