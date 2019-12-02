@@ -7,7 +7,4 @@ public class SalamKeadilanApplet extends Applet{
         g.setFont(font);
         g.drawString ("Hello World", 25, 50);
     }
-    public static void main(String[] args){
-        
-    }
 }
