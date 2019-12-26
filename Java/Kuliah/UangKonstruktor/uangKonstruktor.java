@@ -1,5 +1,3 @@
-package UangKonstruktor;
-
 import java.util.Scanner;
 
 class biodatas{
